@@ -13,6 +13,8 @@ def scrape_linkedin_profile(linkedin_profile_url: str):
     )
 
     data = response.json()
+
+    # cleaning the data
     data = {
         k: v
         for k, v in data.items()
